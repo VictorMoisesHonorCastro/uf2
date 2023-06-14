@@ -1,0 +1,22 @@
+
+<div style="position:absolute; text-align:center;padding:10px;">
+    <div>
+        <div class="contenedor-formulario">
+            <header>
+                <h1>Por favor, ingrese sus datos </h1>
+            </header>
+            <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                <input class="campo-texto" formControlName="nombre" id="nombre" type="text" name="nombre" placeholder="Nombre" maxlength="20" required="" />
+                <input class="campo-texto" formControlName="apellido" id="apellido" type="text" name="apellido" placeholder="Apellido" maxlength="20" required="" />
+                <input class="campo-texto" formControlName="edat" id="usuario" type="number" name="usuario" placeholder="edat" maxlength="20" required="" />
+                <input class="campo-texto" formControlName="foto" id="email" type="email" name="email" placeholder="foto" maxlength="50" required="" />
+                <input class="campo-texto" formControlName="descripcion" id="usuario" type="text" name="usuario" placeholder="descripcion" maxlength="20" required="" />
+                <input class="campo-texto" formControlName="correo" id="email" type="email" name="email" placeholder="foto" maxlength="50" required="" />
+                <input class="campo-texto" formControlName="password" id="password" type="password" name="password" placeholder="Contraseña" maxlength="15" required="" />
+                <input class="campo-texto" formControlName="confirmarpassword" id="password" type="password" name="password" placeholder="confirmar Contraseña" maxlength="15" required="" />
+                <input type="reset" value="Limpiar" class="borrar" />
+                <input type="submit" value="Enviar" class="submit" />
+            </form>
+        </div>
+    </div>
+</div>
